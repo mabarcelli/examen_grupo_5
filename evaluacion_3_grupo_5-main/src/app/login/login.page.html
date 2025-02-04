@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" class="login-screen">
+  
+  <ion-card class="card">
+    
+    <ion-card-header>
+      
+      <div id="container">
+        <ion-img  id="logoapp"  src="/assets/img/logo3.PNG"></ion-img>
+      </div>
+    
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-input autocomplete="off" [(ngModel)]="usuarios.usuario" label="Ingrese su nombre de usuario" labelPlacement="floating" placeholder="Ingrese su usuario"  required id="textn"></ion-input>
+      </ion-item>
+      <ion-text id="container">Ej:john.doe</ion-text>
+      <ion-item lines="none">
+        <ion-input [(ngModel)]="usuarios.clave" label="Ingrese contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña"  required></ion-input>
+      </ion-item>
+      <div id="cuadroMsj">
+        <ion-label>{{msj}}</ion-label>
+      </div>
+      <div id="link-container">
+        <a id="link"  (click)="redirec()">¿Olvidaste tu contraseña?</a>
+      </div>
+     
+      <div id="cont">
+        <ion-button class="hover-button" (click)="Spinner() ; principal()" id="btnLogin">  
+          <mat-spinner mode="indeterminate" style="margin:0 auto;" [diameter]="30" id="modCarga" *ngIf="conexion"></mat-spinner>
+         <ion-text *ngIf="texto">Ingresar </ion-text></ion-button>
+      </div>
+      <div id="cont">
+        <ion-button class="hover-button" (click)="redireccionarR()">  
+           Registrarme</ion-button>
+      </div>
+    </ion-card-content>
+    
+      
+  </ion-card> 
+</ion-content>

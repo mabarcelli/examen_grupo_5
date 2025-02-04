@@ -1,0 +1,126 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "rol": 1,
+      "username": "john.doe",
+      "correo": "john.doe@correo.cl",
+      "clave": "12345",
+      "asistencia": 0
+    },
+    {
+      "id": "2",
+      "rol": 0,
+      "username": "jane.doe",
+      "correo": "jane.doe@correo.cl",
+      "clave": "321",
+      "asistencia": 0
+    },
+    {
+      "id": "3",
+      "rol": 0,
+      "username": "matilda",
+      "correo": "mati@gm.cl",
+      "clave": "123",
+      "asistencia": 0
+    },
+    {
+      "id": "4",
+      "rol": 0,
+      "username": "pepito",
+      "correo": "pepito@gmail.com",
+      "clave": "12345",
+      "asistencia": 0
+    },
+    {
+      "id": "5",
+      "rol": 0,
+      "username": "carol",
+      "correo": "carol@dm.cl",
+      "clave": "1234",
+      "asistencia": 0
+    },
+    {
+      "id": "6",
+      "rol": 0,
+      "username": "a",
+      "correo": "a@a.cl",
+      "clave": "123",
+      "asistencia": 0
+    },
+    {
+      "id": "7",
+      "rol": 0,
+      "username": "azul",
+      "correo": "azul@a.cl",
+      "clave": "123",
+      "asistencia": 0
+    },
+    {
+      "id": "8",
+      "rol": 0,
+      "username": "gaby",
+      "correo": "gaby@j.cl",
+      "clave": "123",
+      "asistencia": 0
+    },
+    {
+      "id": 9,
+      "rol": 0,
+      "username": "maria.a",
+      "correo": "maria@duocuc.cl",
+      "clave": "123",
+      "asistencia": 0
+    },
+    {
+      "id": 10,
+      "rol": 0,
+      "username": "jose.e",
+      "correo": "jose@duocuc.cl",
+      "clave": "123",
+      "asistencia": 0
+    }
+  ],
+  "clases": [
+    {
+      "id": "1",
+      "nombreClase": "Clase 1",
+      "clase": "pag3131",
+      "asistencias": [
+        "azul",
+        "gaby",
+        "carol",
+        "maria.a",
+        "jose.e"
+      ]
+    },
+    {
+      "id": "2",
+      "nombreClase": "Clase 2",
+      "clase": "pag3132",
+      "asistencias": [
+        "jose.e",
+        "a",
+        "maria.a"
+      ]
+    },
+    {
+      "id": "3",
+      "nombreClase": "Clase 3",
+      "clase": "pag3133",
+      "asistencias": []
+    },
+    {
+      "id": "4",
+      "nombreClase": "Clase 4",
+      "clase": "pag3134",
+      "asistencias": []
+    },
+    {
+      "id": "5",
+      "nombreClase": "Clase 5",
+      "clase": "pag3135",
+      "asistencias": []
+    }
+  ]
+}

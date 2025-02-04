@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="login-screen">
+  
+  <ion-card class="card">
+    
+    <ion-card-header>
+      
+      <div id="container">
+        <ion-img  id="logoapp"  src="/assets/img/logo3.PNG"></ion-img>
+      </div>
+    
+    </ion-card-header>
+    <ion-card-content>
+      
+      <ion-item lines="none">
+        <ion-input [(ngModel)]="user.usuario"  label="Ingrese su nombre de usuario" labelPlacement="floating" placeholder="Ingrese su usuario"  required id="textn"></ion-input>
+      </ion-item>
+      <ion-text id="container">Ej:john.doe</ion-text>
+      
+      <ion-item lines="none">
+        <ion-input [(ngModel)]="user.correo" label="Ingrese su correo" labelPlacement="floating" type="email" placeholder="Ingrese su contraseña"  required></ion-input>
+      </ion-item>
+      <ion-text id="container">Ej:john.doe&#64;duocuc.cl</ion-text>
+      
+      <ion-item lines="none">
+        <ion-input  [(ngModel)]="user.clave" label="Ingrese contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña"  required></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-input  [(ngModel)]="user.confirm" label="Vuelva a ingresar su contraseña" labelPlacement="floating" type="password" placeholder="Ingrese su contraseña"  required></ion-input>
+      </ion-item>
+      <div id="cuadroMsj">
+        <ion-label></ion-label>
+      </div>
+      
+      <div id="link-container">
+        <a id="link"  (click)="redirect()">Ya tengo una cuenta</a>
+      </div>
+      
+      <div id="container">
+        <ion-button class="hover-button" (click)="registrar()"  id="btnRegister">Registrarme</ion-button>
+      </div>
+
+    </ion-card-content>
+    
+      
+  </ion-card> 
+</ion-content>

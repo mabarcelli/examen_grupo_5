@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button size="large" fill="clear" color="white" (click)="logout()">
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="toolbar-title">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="center-content">
+    <h1 class="titulo">¡Bienvenid&#64; ! {{ nombreUsuario }}</h1>
+
+
+    <ion-list *ngIf="alumnosView">
+      <ion-item *ngFor="let barcode of barcodes">
+        <ion-label position="stacked">{{ barcode.format }} </ion-label>
+        <ion-input type="text" [value]="barcode.rawValue"></ion-input>
+      </ion-item>
+    </ion-list>
+
+
+    <div id="logo">
+
+      <ion-button *ngIf="alumnosView" (click)="scan()">Escanear QR</ion-button>
+    </div>
+<br>
+<br>
+<br>
+
+
+<ion-list *ngIf="listaAlumnos">
+  <ion-item button *ngFor="let clase of clasesDisponibles" (click)="obtenerAsistencias(clase.id)">
+    <ion-label>{{ clase.nombreClase }}</ion-label>
+  </ion-item>
+</ion-list>
+
+
+<ion-card *ngIf="mostrarLista">
+  <ion-card-header>
+    <ion-card-title>Lista de Alumnos</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let asistencia of asistencias">
+        <ion-label>{{ asistencia }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+  </div>
+  
+
+
+</ion-content>

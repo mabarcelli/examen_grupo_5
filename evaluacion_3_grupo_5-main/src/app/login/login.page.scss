@@ -1,0 +1,73 @@
+ion-content {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+}
+.card{
+    border:30px;
+    top:50px;
+    padding-top: 30px;
+}
+#logoapp{
+    width: 200px;
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover;
+}
+#cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+ion-item ion-input{
+    border: 1px solid gray;
+    
+}
+ion-item {
+    margin-top: 30px;
+}
+
+#link{
+    text-decoration: underline ;
+    text-align: center;
+    color: rgb(255, 166, 0);
+}
+#link-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    width: 100%;              
+    margin-top: 20px; 
+}       
+#modCarga mat-spinner {
+    width: 20% !important;
+    margin: auto;
+    margin-top: 3%;
+  } 
+ion-card{
+    border-radius: 50px;
+    box-shadow:0 10px 15px rgba(0, 0, 0, 0.2); ;
+    width: 90%;
+    position: relative;
+    margin: 0 auto; /* Added */
+        float: none; /* Added */
+}
+ion-button:hover {
+    --background: #ee3535 !important;  /* Cambia el color de fondo */
+    --color: white ;  /* Cambia el color del texto */
+  }
+ 
+  ion-button{
+    width: 60%;
+  }
